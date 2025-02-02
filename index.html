@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        #container>div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            /* text-overflow: ellipsis; */
+        }
+        #container>div>div{
+            text-overflow: ellipsis;
+        }
+
+        #container>div>div>img {
+            padding: 10px;
+            width:100%;
+            aspect-ratio: 1/1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script src="./object.js"></script>
+</body>
+
+</html>
